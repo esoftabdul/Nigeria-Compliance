@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-22 16:37:24.854851",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account",
+  "bank_jurisdiction"
+ ],
+ "fields": [
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Bank Account"
+  },
+  {
+   "fetch_from": "account.custom_bank_jurisdiction",
+   "fieldname": "bank_jurisdiction",
+   "fieldtype": "Data",
+   "label": "Bank Jurisdiction",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-22 18:40:59.077626",
+ "modified_by": "Administrator",
+ "module": "Nigerian Compliance",
+ "name": "Employee Bank Account",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

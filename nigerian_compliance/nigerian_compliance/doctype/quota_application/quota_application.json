@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-23 17:36:17.231372",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "quota_issue_date",
+  "letter",
+  "column_break_lcrl",
+  "quota_submitted",
+  "quota_expiry_date",
+  "gov_quota_approved",
+  "section_break_body",
+  "quota_applications",
+  "section_break_mpfi",
+  "approved_positions",
+  "section_break_ntnt",
+  "agency",
+  "document_tab",
+  "submit_documents",
+  "receive_documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_body",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "quota_issue_date",
+   "fieldtype": "Date",
+   "label": "Quota Issue Date"
+  },
+  {
+   "fieldname": "letter",
+   "fieldtype": "Data",
+   "label": "Letter"
+  },
+  {
+   "fieldname": "column_break_lcrl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "quota_submitted",
+   "fieldtype": "Date",
+   "label": "Quota Submitted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quota_expiry_date",
+   "fieldtype": "Date",
+   "label": "Quota Expiry Date"
+  },
+  {
+   "fieldname": "gov_quota_approved",
+   "fieldtype": "Date",
+   "label": "Gov Quota Approved"
+  },
+  {
+   "fieldname": "section_break_mpfi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_positions",
+   "fieldtype": "Table",
+   "label": "Approved Positions",
+   "options": "Approved Quota Applications"
+  },
+  {
+   "fieldname": "section_break_ntnt",
+   "fieldtype": "Section Break",
+   "label": "Quota Details"
+  },
+  {
+   "fieldname": "agency",
+   "fieldtype": "Link",
+   "label": "Agency",
+   "options": "Supplier",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "document_tab",
+   "fieldtype": "Tab Break",
+   "label": "Document"
+  },
+  {
+   "fieldname": "submit_documents",
+   "fieldtype": "Table",
+   "label": "Submit Documents",
+   "options": "Quota Submit Document"
+  },
+  {
+   "fieldname": "receive_documents",
+   "fieldtype": "Table",
+   "label": "Receive Documents",
+   "options": "Quota Recieve Document"
+  },
+  {
+   "fieldname": "quota_applications",
+   "fieldtype": "Table",
+   "label": "Applications",
+   "options": "Quota Applications"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-25 14:05:25.799134",
+ "modified_by": "Administrator",
+ "module": "Nigerian Compliance",
+ "name": "Quota Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Quota Approver",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Quota User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

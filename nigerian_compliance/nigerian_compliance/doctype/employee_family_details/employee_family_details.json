@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-19 14:53:40.756128",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "date_of_birth",
+  "gender",
+  "relationship",
+  "with_employee",
+  "passport_id",
+  "passport_expiry",
+  "cerpac",
+  "cerpac_expiry",
+  "e_registration",
+  "passport",
+  "upload_cerpac"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Link",
+   "label": "Relationship",
+   "options": "Relation"
+  },
+  {
+   "default": "0",
+   "fieldname": "with_employee",
+   "fieldtype": "Check",
+   "label": "Co-resident with Employee"
+  },
+  {
+   "fieldname": "passport_id",
+   "fieldtype": "Data",
+   "label": "Passport ID"
+  },
+  {
+   "fieldname": "passport_expiry",
+   "fieldtype": "Date",
+   "label": "Passport Expiry"
+  },
+  {
+   "fieldname": "cerpac",
+   "fieldtype": "Data",
+   "label": "CERPAC"
+  },
+  {
+   "fieldname": "cerpac_expiry",
+   "fieldtype": "Date",
+   "label": "CERPAC Expiry"
+  },
+  {
+   "fieldname": "e_registration",
+   "fieldtype": "Data",
+   "label": "E-registration"
+  },
+  {
+   "fieldname": "passport",
+   "fieldtype": "Attach",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "upload_cerpac",
+   "fieldtype": "Attach",
+   "label": "Upload CERPAC"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-22 17:22:30.221527",
+ "modified_by": "Administrator",
+ "module": "Nigerian Compliance",
+ "name": "Employee Family Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

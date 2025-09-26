@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-23 17:42:09.304923",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "designation",
+  "zone",
+  "branch",
+  "requested_seats",
+  "approved_seats",
+  "gov_approved_qty",
+  "remark",
+  "approver_remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Zone",
+   "options": "Quota Zone"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "approver_remark",
+   "fieldtype": "Small Text",
+   "label": "Approver Remark",
+   "permlevel": 1
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Approved\"",
+   "fieldname": "gov_approved_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Gov Approved Qty",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "requested_seats",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Req. Quota Qty",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "approved_seats",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Approved Qty",
+   "permlevel": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-25 13:45:34.004133",
+ "modified_by": "Administrator",
+ "module": "Nigerian Compliance",
+ "name": "Quota Applications",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

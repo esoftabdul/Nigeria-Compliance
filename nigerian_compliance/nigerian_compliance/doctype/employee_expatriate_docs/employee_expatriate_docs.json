@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-19 16:54:30.197343",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document",
+  "reg",
+  "valid_upto",
+  "upload",
+  "is_reg_mandatory",
+  "is_valid_date_mandatory",
+  "is_attachment_mandatory"
+ ],
+ "fields": [
+  {
+   "fieldname": "document",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Document",
+   "options": "Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reg",
+   "mandatory_depends_on": "eval: doc.is_reg_mandatory"
+  },
+  {
+   "fieldname": "valid_upto",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Valid Upto",
+   "mandatory_depends_on": "eval: doc.is_valid_date_mandatory"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Upload",
+   "mandatory_depends_on": "eval:doc.is_attachment_mandatory"
+  },
+  {
+   "default": "0",
+   "fetch_from": "document.is_reg_mandatory",
+   "fieldname": "is_reg_mandatory",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Reg Mandatory"
+  },
+  {
+   "default": "0",
+   "fetch_from": "document.is_valid_date_mandatory",
+   "fieldname": "is_valid_date_mandatory",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Valid Date Mandatory"
+  },
+  {
+   "default": "0",
+   "fetch_from": "document.is_attachment_mandatory",
+   "fieldname": "is_attachment_mandatory",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Attachment Mandatory"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-22 17:17:49.905870",
+ "modified_by": "Administrator",
+ "module": "Nigerian Compliance",
+ "name": "Employee Expatriate Docs",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
