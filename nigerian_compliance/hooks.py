@@ -246,3 +246,20 @@ doc_events = {
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+fixtures = [
+    # Export specific Roles
+    {
+        "doctype": "Role",
+        "filters": [
+            ["name", "in", ["System Manager", "Quota Approver", "Quota User"]]
+        ],
+    },
+    # Export Role Permissions for Quota Application
+    {
+        "doctype": "Custom DocPerm",
+        "filters": [
+            ["parent", "in", ["Quota Application"]]
+        ],
+    }
+]
